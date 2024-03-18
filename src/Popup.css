@@ -1,0 +1,83 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideFromRight 0.3s ease;
+  }
+  
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .popup-header .popup-label {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .popup-header .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .popup-body {
+    margin-bottom: 20px;
+  }
+  
+  .popup-body .popup-label {
+    font-weight: bold;
+  }
+  
+  .popup-body input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .popup-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-footer button:nth-child(1) {
+    background-color: teal;
+  }
+  
+  .popup-footer button:nth-child(2) {
+    background-color: grey;
+  }
+  
